@@ -16,42 +16,51 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="script.js"></script>
   </head>
   <body class="snap-y snap-proximity font-[montserrat]">
     <div class="flex flex-col min-h-[100dvh]">
       <header
-        class="px-4 lg:px-6 h-14 sticky top-0 z-[100] flex items-center bg-gradient-to-r from-purple-500 to-pink-500"
+        id="navbar"
+        class="px-4 lg:px-6 h-14 sticky bg-black md:fixed w-full top-0 z-[100] flex items-center md:bg-transparent md:bg-opacity-70 from-purple-500 to-pink-500"
       >
         <a class="flex items-center justify-center" href="#" rel="ugc">
-          <h1 class="text-white font-bold text-xl">
+          <h1 class="text-white font-bold text-xs md:text-xl">
             California Globle TS Inc.
           </h1>
           <span class="sr-only text-white">California Globle TS Inc</span>
         </a>
         <nav class="ml-auto flex gap-4 sm:gap-6">
           <a
-            class="text-sm font-medium text-white hover:underline underline-offset-4"
+            class="text-xs font-medium text-white hover:underline underline-offset-4"
             href="#"
             rel="ugc"
           >
             Home
           </a>
           <a
-            class="text-sm font-medium text-white hover:underline underline-offset-4"
+            class="text-xs font-medium text-white hover:underline underline-offset-4"
             href="#summer"
             rel="ugc"
           >
             Summer
           </a>
           <a
-            class="text-sm font-medium text-white hover:underline underline-offset-4"
+            class="text-xs font-medium text-white hover:underline underline-offset-4"
             href="#contact"
             rel="ugc"
           >
             Contact
           </a>
           <a
-            class="text-sm font-medium text-white hover:underline underline-offset-4"
+            class="text-xs font-medium text-white hover:underline underline-offset-4"
             href="#about"
             rel="ugc"
           >
@@ -65,7 +74,7 @@
         >
           <div
             id="controls-carousel"
-            class="absolute w-full -z-50"
+            class="absolute w-full -z-50 blur-sm grayscale"
             data-carousel="slide"
           >
             <!-- Carousel wrapper -->
@@ -125,7 +134,7 @@
               <div class="flex flex-col justify-center space-y-4">
                 <div class="space-y-2">
                   <h1
-                    class="text-3xl font-bold tracking-tighter sm:text-5xl text-white"
+                    class="text-3xl font-bold tracking-tighter sm:text-5xl text-white mix-blend-exclusion"
                   >
                     California Globle TS Inc.
                   </h1>
@@ -159,7 +168,7 @@
           </div>
         </section>
 
-        <section class="bg-slate-100 snap-start shrink-0">
+        <section class="bg-gray-100 snap-start shrink-0">
           <h3
             class="text-xl md:text-3xl text-center uppercase py-8 font-bold tracking-[0.2em]"
           >
@@ -295,20 +304,22 @@
             </div>
           </div>
         </section>
-
+        <div class="container mx-auto">
+          <hr class="my-10 border-black border" />
+        </div>
         <section
           id="summer"
-          class="snap-start w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-blue-400 to-purple-400"
+          class="snap-start w-full py-12 md:py-24 lg:py-32 bg-white from-blue-400 to-purple-400"
         >
           <div class="container grid items-center gap-6 px-4 md:px-6">
             <div class="space-y-2">
               <h2
-                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white"
+                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white mix-blend-exclusion"
               >
                 Colorful Summer
               </h2>
               <p
-                class="mx-auto max-w-[700px] text-gray-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                class="mx-auto max-w-[700px] text-gray-100 mix-blend-difference md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
               >
                 Dive into the season with our vibrant and lively summer
                 essentials.
@@ -326,8 +337,12 @@
                   class="aspect-3/4 object-cover object-center rounded-lg overflow-hidden"
                 />
                 <div class="flex flex-col gap-0.5">
-                  <h3 class="text-sm font-bold text-white">Trendy Tops</h3>
-                  <p class="text-sm text-gray-100 dark:text-gray-400">
+                  <h3 class="text-sm font-bold text-white mix-blend-exclusion">
+                    Trendy Tops
+                  </h3>
+                  <p
+                    class="text-sm text-white mix-blend-difference dark:text-gray-400"
+                  >
                     Shop Now
                   </p>
                 </div>
@@ -341,8 +356,12 @@
                   class="aspect-3/4 object-cover object-center rounded-lg overflow-hidden"
                 />
                 <div class="flex flex-col gap-0.5">
-                  <h3 class="text-sm font-bold text-white">Stylish Shorts</h3>
-                  <p class="text-sm text-gray-100 dark:text-gray-400">
+                  <h3 class="text-sm font-bold text-white mix-blend-exclusion">
+                    Stylish Shorts
+                  </h3>
+                  <p
+                    class="text-sm text-white mix-blend-difference dark:text-gray-400"
+                  >
                     Shop Now
                   </p>
                 </div>
@@ -356,8 +375,12 @@
                   class="aspect-3/4 object-cover object-center rounded-lg overflow-hidden"
                 />
                 <div class="flex flex-col gap-0.5">
-                  <h3 class="text-sm font-bold text-white">Chic Dresses</h3>
-                  <p class="text-sm text-gray-100 dark:text-gray-400">
+                  <h3 class="text-sm font-bold text-white mix-blend-exclusion">
+                    Chic Dresses
+                  </h3>
+                  <p
+                    class="text-sm text-white mix-blend-difference dark:text-gray-400"
+                  >
                     Shop Now
                   </p>
                 </div>
@@ -371,10 +394,12 @@
                   class="aspect-3/4 object-cover object-center rounded-lg overflow-hidden"
                 />
                 <div class="flex flex-col gap-0.5">
-                  <h3 class="text-sm font-bold text-white">
+                  <h3 class="text-sm font-bold text-white mix-blend-exclusion">
                     Summer Accessories
                   </h3>
-                  <p class="text-sm text-gray-100 dark:text-gray-400">
+                  <p
+                    class="text-sm text-white mix-blend-difference dark:text-gray-400"
+                  >
                     Shop Now
                   </p>
                 </div>
@@ -383,77 +408,68 @@
           </div>
         </section>
 
-        <section
-          id="contact"
-          class="bg-gradient-to-b from-yellow-400/60 to-green-400/60 dark:bg-gray-900"
-        >
-          <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-            <h2
-              class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"
-            >
-              Contact Us
-            </h2>
-            <p
-              class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"
-            >
-              Got a technical issue? Want to send feedback about a beta feature?
-              Need details about our Business plan? Let us know.
-            </p>
-            <form action="#" class="space-y-8">
-              <div>
-                <label
-                  for="email"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                  >Your email</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="name@example.com"
-                  required
-                />
+        <div class="container mx-auto">
+          <hr class="border border-black my-10" />
+        </div>
+
+        <div class="bg-gray-900 text-white py-12">
+          <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+              <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+              <p class="text-gray-300 leading-relaxed mb-8">
+                Have questions or feedback? We'd love to hear from you! Reach
+                out to us via email or follow us on social media for the latest
+                updates.
+              </p>
+              <div class="flex justify-center mb-8">
+                <a
+                  href="mailto:contact@californiaglobalts.com"
+                  class="bg-white text-gray-900 py-2 px-4 rounded-full font-medium mr-4 hover:bg-gray-300 transition duration-300"
+                  >Email Us
+                </a>
+                <a
+                  href="#"
+                  class="bg-white text-gray-900 py-2 px-4 rounded-full font-medium hover:bg-gray-300 transition duration-300"
+                  >Call Us
+                </a>
               </div>
-              <div>
-                <label
-                  for="subject"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                  >Subject</label
+              <div class="flex justify-center gap-5">
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white mr-4 transition duration-300"
                 >
-                <input
-                  type="text"
-                  id="subject"
-                  class="block p-3 w-full text-sm text-gray-900 bg-gray-200 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="Let us know how we can help you"
-                  required
-                />
-              </div>
-              <div class="sm:col-span-2">
-                <label
-                  for="message"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-                  >Your message</label
+                  <i class="fa-brands fa-facebook text-4xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white mr-4 transition duration-300"
                 >
-                <textarea
-                  id="message"
-                  rows="6"
-                  class="block p-2.5 w-full text-sm text-gray-900 bg-gray-200 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                  placeholder="Leave a comment..."
-                ></textarea>
+                  <i class="fa-brands fa-instagram text-4xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white mr-4 transition duration-300"
+                >
+                  <i class="fa-brands fa-tiktok text-4xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition duration-300"
+                >
+                  <i class="fa-brands fa-twitter text-4xl"></i>
+                </a>
               </div>
-              <button
-                type="submit"
-                class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-              >
-                Send message
-              </button>
-            </form>
+            </div>
           </div>
-        </section>
+        </div>
+
+        <div class="container mx-auto">
+          <hr class="border border-black my-10" />
+        </div>
 
         <section
           id="about"
-          class="snap-start w-full py-6 md:py-12 lg:py-16 border-t bg-gradient-to-b from-purple-400/80 to-blue-400/80"
+          class="snap-start w-full py-6 md:py-12 lg:py-16 bg-white from-purple-400/80 to-blue-400/80"
         >
           <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center">
